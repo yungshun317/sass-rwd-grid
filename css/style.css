@@ -1,0 +1,16 @@
+.container {
+    background-color: #eee;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.item {
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.item--1 {
+    background-color: orangered;
+}
