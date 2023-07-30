@@ -88,7 +88,7 @@
 
 */
 
-/* [2] Line Names */
+/* [2] Line Names
 
 .challenge {
     width: 1000px;
@@ -126,3 +126,45 @@
     grid-column: col-start 1 / grid-end;
 }
 
+*/
+
+/* [3] Name Grid Areas */
+
+.challenge {
+    width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-rows: 100px 200px 400px 100px;
+    grid-template-columns: repeat(3, 1fr) 200px;
+    grid-gap: 30px;
+
+    grid-template-areas: "head head head head"
+                         "box box box side"
+                         "main main main side"
+                         "foot foot foot foot";
+}
+
+.challenge div {
+    background-color: red;
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.header {
+    grid-area: head;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: foot;
+}
