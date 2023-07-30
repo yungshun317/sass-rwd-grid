@@ -65,3 +65,21 @@
     font-family: sans-serif;
     color: white;
 }
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.sidebar {
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+}
+
+.main-content {
+    grid-row: 3 / 4;
+    grid-column: 1 / span 3;
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
