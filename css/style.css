@@ -194,8 +194,13 @@
 
     /* Implicit grids */
     grid-auto-rows: 80px;
-    grid-auto-flow: column;
+    /* Default row */
+    grid-auto-flow: row;
     grid-auto-columns: .5fr;
+
+    /* Default stretch */
+    align-items: center;
+    justify-items: center;
 }
 
 .item {
@@ -204,4 +209,17 @@
     font-size: 30px;
     font-family: sans-serif;
     color: white;
+}
+
+.item--4 {
+    background-color: crimson;
+    grid-row: 2 / span 3;
+
+    align-self: start;
+    justify-self: start;
+}
+
+.item--7 {
+    background-color: palevioletred;
+    grid-column: 1 / -1;
 }
