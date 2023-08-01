@@ -252,8 +252,10 @@
     margin: 30px auto;
 
     display: grid;
-    grid-template-rows: repeat(2, 150px);
-    grid-template-columns: max-content 1fr 1fr max-content;
+    /* grid-template-rows: repeat(2, 150px); */
+    /* grid-template-columns: max-content 1fr 1fr max-content; */
+    grid-template-columns: max-content 1fr 1fr min-content;
+    grid-template-rows: repeat(2, min-content);
 }
 
 .item {
